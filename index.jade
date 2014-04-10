@@ -39,7 +39,7 @@ html
 
       function message (from, msg) {
         if ($('#nick').val() != from) {
-           $('#lines').append($('<p>').append($('<b>').text(from), msg));
+           $('#lines').append($('<p>').append($('<b>').text(from), $('<span>').text(msg)));
         }
       }
 
